@@ -5,7 +5,6 @@ import {
   SiPython, 
   SiDjango, 
   SiPhp, 
-  SiJava, 
   SiHtml5, 
   SiCss3, 
   SiReact, 
