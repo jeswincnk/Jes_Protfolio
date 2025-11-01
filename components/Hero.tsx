@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from 'react-icons/fa'
 import Image from 'next/image'
+import { BASE_PATH } from '@/lib/constants'
 
 export default function Hero() {
   const socialLinks = [
@@ -18,7 +19,7 @@ export default function Hero() {
       <div className="absolute inset-0 w-full h-full pl-10 opacity-40">
         <div className="relative w-3/4 h-full">
           <Image
-            src="/jeswin-photo-1.png"
+            src={`${BASE_PATH}/jeswin-photo-1.png`}
             alt="Jeswin Background"
             fill
             className="object-cover object-top grayscale"

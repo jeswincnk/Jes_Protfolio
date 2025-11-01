@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { BASE_PATH } from '@/lib/constants'
 
 export default function Bio() {
     return (
@@ -49,7 +50,7 @@ export default function Bio() {
                         {/* Photo */}
                         <div className="relative w-full h-full rounded-lg overflow-hidden z-10">
                             <Image
-                                src="/jeswin-photo-2.png"
+                                src={`${BASE_PATH}/jeswin-photo-2.png`}
                                 alt="Jeswin Bio Photo"
                                 fill
                                 className="object-cover object-center"

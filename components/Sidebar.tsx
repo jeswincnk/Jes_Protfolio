@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import { FaUser, FaGraduationCap, FaLanguage } from 'react-icons/fa'
 import { IoClose } from 'react-icons/io5'
+import { BASE_PATH } from '@/lib/constants'
 
 export default function Sidebar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -69,7 +70,7 @@ export default function Sidebar() {
                 <div className="flex flex-col items-center mb-6">
                   <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-gold mb-4">
                     <Image
-                      src="/jeswin-photo.png"
+                      src={`${BASE_PATH}/jeswin-photo.png`}
                       alt="Jeswin PJ"
                       fill
                       className="object-cover object-center"
