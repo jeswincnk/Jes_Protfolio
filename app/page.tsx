@@ -11,6 +11,7 @@ import Testimonial from '@/components/Testimonial'
 import Contact from '@/components/Contact'
 import Navigation from '@/components/Navigation'
 import Sidebar from '@/components/Sidebar'
+import BottomNav from '@/components/BottomNav'
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('hero')
@@ -38,7 +39,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-dark-bg">
-      <div className="border-2 border-gold min-h-screen">
+      <div className="border-2 border-gold min-h-screen pb-20 md:pb-0">
         {/* Sidebar */}
         <Sidebar />
         
@@ -66,6 +67,8 @@ export default function Home() {
             <Contact />
           </div>
         </div>
+        {/* Bottom Navigation for mobile */}
+        <BottomNav activeSection={activeSection} />
       </div>
     </main>
   )
